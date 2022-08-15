@@ -160,8 +160,8 @@ color: var(--accent-color);
     padding: 10px 30px;
     text-align: center;
 
-    color: var(--tytle-text-color);
-    background-color: var(--primary-white-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color) ;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -171,15 +171,9 @@ color: var(--accent-color);
 }
 
 .button:hover,
-.buttons:hover{
-color: var(--primary-white-color);
-background-color: var(--accent-color);
-
-
-}
+.buttons:hover,
 .button:focus,
-.buttons:focus
-{
+.buttons:focus{
 color: var(--primary-white-color);
 background-color: var(--accent-color);
 
@@ -188,8 +182,10 @@ background-color: var(--accent-color);
     padding: 94px 0;
 }
 /*Hero*/
+.hero{
+    background-color: #212121;
+}
 .tytle-a{
-background-color: #212121;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -337,17 +333,19 @@ background-color: #212121;
     letter-spacing: 0.03em;
 }
 .scd-pj-list{
-    margin: 0%;
+    margin: 0;
     padding: 0 0 94px 0;
+    text-align: center;
 }
 .scd-pj-list h2, .scd-pj-list p{
     margin: 0%;
 }
 .buttuns-clas{
     display:inline-flex;
-    margin-left: 330px;
+    
     padding-top: 94px;
     padding-bottom: 34px;
+    text-align: center;
 }
 
 .buttuns-clas li{
@@ -357,6 +355,7 @@ background-color: #212121;
 .projects-list{
     display: flex;
     flex-wrap: wrap;
+    text-align: start;
 }
 
 .projects-list li{
