@@ -135,10 +135,8 @@ body {
   align-items: center;
   
 }
-.hero .container{
-  
-}
 .hero-tytle {
+  max-width: 1600px;
   margin: 0  auto 30px;
   font-weight: 900;
   font-size: 44px;
@@ -149,6 +147,9 @@ body {
   max-width: 696px;
 }
 .hero {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcgstudio.jpg);
@@ -207,6 +208,10 @@ body {
 .footer-logo:focus {
   color: #2196f3;
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /*---------------about-------------*/
 .about-list {
   margin: 0%;
@@ -240,23 +245,15 @@ body {
 .about-list :last-child {
   margin-right: 0%;
 }
-.about-item::before{
-  display:block;
-content: "";
-height: 120px;
-background-size: contain;
-background-position: center;
+.icon{
 background-color: var(--fill-space-color);
-background-repeat: no-repeat;
-
+padding: 25px 100px 15px;
+margin-bottom: 30px;
 }
-.about-antena::before{
-background-image: url(../images/antenna1.svg);
-}
+.icon-about{
+  height: 70px;
+  width: 70px;
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /*---------------work-------------------*/
 .work-list {
@@ -286,6 +283,7 @@ background-image: url(../images/antenna1.svg);
   margin-bottom: 50px;
 }
 .team-item {
+  padding-bottom: 30px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -305,14 +303,45 @@ background-image: url(../images/antenna1.svg);
   color: var(--tytle-text-color);
 }
 .team-text {
-  padding-bottom: 30px;
   margin: 0%;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team-icon{
+  margin: 0 auto;
+}
+.team-list-icon{
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  padding: 0%;
+ 
+}
+.icon-team{
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  outline: 1px solid red;
+}
+.team-link-icon{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  outline: 1px solid red;
+  border-radius: 50%;
+}
+.team-link-icon:hover{
+  background-color: var(--accent-color);
+  fill: #fff;
+}
+
 /*--------------footer-----------------*/
 .footer {
   background-color: rgba(47, 48, 58, 1);
